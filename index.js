@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const blessed = require('blessed');
 const startChat = require('./startChat');
 const Redis = require("ioredis");
