@@ -9,7 +9,7 @@
   },
   "bin": {
    "taalk": "./index.js"
-  }
+  },
   "repository": "Lambda-Store/taalk",
   "license": "MIT",
   "dependencies": {
