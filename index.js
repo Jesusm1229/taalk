@@ -10,20 +10,16 @@ for (let j = 0; j < process.argv.length; j++) {
         redisUrl = process.argv[j];
     }
 }
-let pubClient = new Redis(redisUrl);
-let subClient = new Redis(redisUrl);
 
-pubClient.on('error', function (error) {
+const pubClient = new Redis(redisUrl);
+const subClient = new Redis(redisUrl);
+
+
+pubClient.connect().catch(function () {
   console.log("Couldn't connect to redis");
   console.log("Usage: termchat $redis_url");
   process.exit(0);
-})
-
-subClient.on('error', function (error) {
-  console.log("Couldn't connect to redis");
-  console.log("Usage: termchat $redis_url");
-  process.exit(0);
-})
+});
 
 const screen = blessed.screen({
   smartCSR: true,
