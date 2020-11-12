@@ -1,6 +1,6 @@
 {
   "name": "taalk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "author": "Lambda Store",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-   "taalk": "./index.js"
+    "taalk": "./index.js"
   },
   "repository": "Lambda-Store/taalk",
   "license": "MIT",
