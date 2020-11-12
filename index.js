@@ -15,7 +15,7 @@ const pubClient = new Redis(redisUrl);
 const subClient = new Redis(redisUrl);
 
 
-pubClient.connect().catch(function () {
+pubClient.on('error', err => {
   console.log("Couldn't connect to redis");
   console.log("Usage: termchat $redis_url");
   process.exit(0);
