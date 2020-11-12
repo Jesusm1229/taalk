@@ -1,0 +1,16 @@
+{
+  "name": "taalk",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Lambda Store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "Lambda-Store/taalk",
+  "license": "MIT",
+  "dependencies": {
+    "blessed": "^0.1.81",
+    "ioredis": "^4.19.0"
+  }
+}
