@@ -17,7 +17,7 @@ const subClient = new Redis(redisUrl);
 
 pubClient.on('error', err => {
   console.log("Couldn't connect to redis");
-  console.log("Usage: termchat $redis_url");
+  console.log("Usage: taalk $redis_url");
   process.exit(0);
 });
 
