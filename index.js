@@ -14,13 +14,13 @@ for (let j = 0; j < process.argv.length; j++) {
 const pubClient = new Redis(redisUrl);
 const subClient = new Redis(redisUrl);
 
-
 pubClient.on('error', err => {
   console.log("Couldn't connect to redis");
   console.log("Usage: taalk $redis_url");
   process.exit(0);
 });
 
+pubClient.get("test").then(() => {
 const screen = blessed.screen({
   smartCSR: true,
   title: 'Lambda Store Chat 🚀',
@@ -61,3 +61,4 @@ initInput.key(['C-c'], () => process.exit(0));
 screen.append(initBox);
 screen.render();
 initInput.focus();
+});
