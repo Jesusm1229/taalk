@@ -1,4 +1,4 @@
-# taalk : Chat application for your CLI with Redis Pub/Sub
+# taalk : Chat in your CLI with Redis Pub/Sub
 
 ### Steps
 1- Install
